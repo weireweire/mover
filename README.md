@@ -1,14 +1,14 @@
 # Mover
 
-Mover is an easy-to-learn editer for people that are non heavy user of vim or emacs. It learned from vim and emacs and provides easyer keybindings. Spend five minutes reading this, and your coding efficiency will increase significantly.
+Mover is an easy-to-learn editor for non heavy user of vim or emacs. It learned from vim/emacs and provides easyer keybindings. Spend five minutes reading this, and your coding efficiency will increase significantly.
 
 ## Features
 
-* **non-aggresive**: Retain the original functions and keybindings as much as possible. (So the ctrl+c and ctrl+v are safe.)
+* **Non-aggresive**: Retain the original functions and keybindings as much as possible. (So the ctrl+c and ctrl+v are safe.)
 
-* **easy**: The intuitive keybindings and consistency make it easy to master.
+* **Easy**: The intuitive keybindings and consistency make it easy to master.
 
-* **efficient**: Avoid moving your hands far to the mouse, cursor keys, Ctrl, Esc, etc. Support both key combinations for quick edit and mode change for heavy edit.
+* **Efficient**: Avoid moving your hands far to the mouse, cursor keys, Ctrl, Esc, etc. Support both key combinations for quick edit and mode change for heavy edit.
 
 ## Usage
 

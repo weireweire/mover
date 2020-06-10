@@ -1,13 +1,13 @@
 {
 	"name": "mover",
 	"displayName": "Mover",
-	"description": "an easy-to-learn editor extension derived from vim and emacs.",
+	"description": "an easy and efficient editor extension derived from vim and emacs.",
 	"icon": "icon.png",
 	"version": "0.1.0",
 	"publisher": "weire",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/"
+		"url": "https://github.com/weireweire/mover.git"
 	  },
 	"engines": {
 		"vscode": "^1.37.0"
