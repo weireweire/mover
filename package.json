@@ -1,0 +1,493 @@
+{
+	"name": "mover",
+	"displayName": "Mover",
+	"description": "an easy-to-learn editor extension derived from vim and emacs.",
+	"icon": "icon.png",
+	"version": "0.1.0",
+	"publisher": "weire",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/"
+	  },
+	"engines": {
+		"vscode": "^1.37.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*",
+		"onCommand:extension.mover"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+		],
+		"keybindings": [
+			{
+				"command": "state.changeMode",
+				"key": "alt+enter"
+			},
+
+			{
+				"command": "mover.combination.alt+0",
+				"key": "alt+0",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+1",
+				"key": "alt+1",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+2",
+				"key": "alt+2",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+3",
+				"key": "alt+3",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+4",
+				"key": "alt+4",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+5",
+				"key": "alt+5",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+6",
+				"key": "alt+6",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+7",
+				"key": "alt+7",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+8",
+				"key": "alt+8",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+9",
+				"key": "alt+9",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+b",
+				"key": "alt+b",
+				"when": "editorHasSelection"
+			},
+			{
+				"command": "mover.combination.alt+c",
+				"key": "alt+c",
+				"when": "editorHasSelection"
+			},
+			{
+				"command":"mover.combination.alt+d",
+				"key": "alt+d",
+				"when": "!terminalFocus"
+			},
+			{
+				"command": "workbench.action.navigateDown",
+				"key": "alt+d",
+				"when": "terminalFocus"
+			},
+			{
+				"command": "workbench.action.navigateDown",
+				"key": "d",
+				"when": "terminalFocus && mover.mode == 'Alt'"
+			},
+			{
+				"command":"mover.combination.alt+e",
+				"key": "alt+e",
+				"when": "!terminalFocus"
+			},
+			{
+				"command": "workbench.action.navigateUp",
+				"key": "alt+e",
+				"when": "terminalFocus"
+			},
+			{
+				"command": "workbench.action.navigateUp",
+				"key": "e",
+				"when": "terminalFocus && mover.mode == 'Alt'"
+			},
+			{
+				"command": "workbench.action.navigateRight",
+				"key": "alt+f",
+				"when": "terminalFocus"
+			},
+			{
+				"command": "workbench.action.navigateRight",
+				"key": "f",
+				"when": "terminalFocus && mover.mode == 'Alt'"
+			},
+			{
+				"command": "mover.combination.alt+f",
+				"key": "alt+f",
+				"when": "!terminalFocus"
+			},
+			{
+				"command": "mover.combination.alt+g",
+				"key": "alt+g",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+h",
+				"key": "alt+h",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+i",
+				"key": "alt+i",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+j",
+				"key": "alt+j",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+k",
+				"key": "alt+k",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+l",
+				"key": "alt+l",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+m",
+				"key": "alt+m",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+o",
+				"key": "alt+o",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+p",
+				"key": "alt+p",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+r",
+				"key": "alt+r"
+			},
+			{
+				"command": "mover.combination.alt+s",
+				"key": "alt+s",
+				"when": "!terminalFocus"
+			},
+			{
+				"command": "workbench.action.navigateLeft",
+				"key": "alt+s",
+				"when": "terminalFocus"
+			},
+			{
+				"command": "workbench.action.navigateLeft",
+				"key": "s",
+				"when": "terminalFocus && mover.mode == 'Alt'"
+			},
+			{
+				"command": "mover.combination.alt+u",
+				"key": "alt+u",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+v",
+				"key": "alt+v",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+w",
+				"key": "alt+w"
+			},
+			{
+				"command": "mover.combination.alt+x",
+				"key": "alt+x",
+				"when": "editorHasSelection"
+			},
+			{
+				"command": "mover.combination.alt+y",
+				"key": "alt+y",
+				"when": "editorTextFocus"
+			},
+
+			{
+				"command": "mover.combination.alt+z",
+				"key": "alt+z",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+,",
+				"key": "alt+,",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+.",
+				"key": "alt+.",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+]",
+				"key": "alt+]",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+[",
+				"key": "alt+[",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+`",
+				"key": "alt+`",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+-",
+				"key": "alt+-",
+				"when": "editorTextFocus"
+			},
+
+
+
+			{
+				"command": "mover.combination.shift+i",
+				"key": "shift+i",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
+				"command": "mover.combination.shift+j",
+				"key": "shift+j",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
+				"command": "mover.combination.shift+k",
+				"key": "shift+k",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
+				"command": "mover.combination.shift+l",
+				"key": "shift+l",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
+				"command": "mover.combination.shift+m",
+				"key": "shift+m",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
+				"command": "mover.combination.shift+o",
+				"key": "shift+o",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
+				"command": "mover.combination.shift+u",
+				"key": "shift+u",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
+				"command": "mover.combination.shift+,",
+				"key": "shift+,",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+
+			{
+				"command": "mover.combination.shift+.",
+				"key": "shift+.",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+
+
+
+
+			{
+				"command": "mover.combination.alt+shift+i",
+				"key": "alt+shift+i",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+shift+j",
+				"key": "alt+shift+j",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+shift+k",
+				"key": "alt+shift+k",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+shift+l",
+				"key": "alt+shift+l",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+shift+m",
+				"key": "alt+shift+m",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+shift+o",
+				"key": "alt+shift+o",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+shift+u",
+				"key": "alt+shift+u",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+shift+,",
+				"key": "alt+shift+,",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.alt+shift+.",
+				"key": "alt+shift+.",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.b b",
+				"key": "b b",
+				"when": "!editorHasSelection && mover.mode == 'Alt'"
+			},
+			{
+				"command": "mover.combination.b i",
+				"key": "b i",
+				"when": "!editorHasSelection && mover.mode == 'Alt'"
+			},
+			{
+				"command": "mover.combination.b j",
+				"key": "b j",
+				"when": "!editorHasSelection && mover.mode == 'Alt'"
+			},
+			{
+				"command": "mover.combination.b k",
+				"key": "b k",
+				"when": "!editorHasSelection && mover.mode == 'Alt'"
+			},
+			{
+				"command": "mover.combination.b l",
+				"key": "b l",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
+				"command": "mover.combination.b m",
+				"key": "b m",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
+				"command": "mover.combination.b o",
+				"key": "b o",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
+				"command": "mover.combination.b u",
+				"key": "b u",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
+				"command": "mover.combination.b .",
+				"key": "b .",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
+				"command": "mover.combination.c c",
+				"key": "c c",
+				"when": "!editorHasSelection && mover.mode == 'Alt'"
+			},
+			{
+				"command": "mover.combination.x x",
+				"key": "x x",
+				"when": "!editorHasSelection && mover.mode == 'Alt'"
+			},
+
+			{
+				"command": "mover.combination.alt+b alt+b",
+				"key": "alt+b alt+b",
+				"when": "!editorHasSelection"
+			},
+			{
+				"command": "mover.combination.alt+b alt+i",
+				"key": "alt+b alt+i",
+				"when": "!editorHasSelection"
+			},
+			{
+				"command": "mover.combination.alt+b alt+j",
+				"key": "alt+b alt+j",
+				"when": "!editorHasSelection"
+			},
+			{
+				"command": "mover.combination.alt+b alt+k",
+				"key": "alt+b alt+k",
+				"when": "!editorHasSelection"
+			},
+			{
+				"command": "mover.combination.alt+b alt+l",
+				"key": "alt+b alt+l",
+				"when": "!editorHasSelection"
+			},
+			{
+				"command": "mover.combination.alt+b alt+m",
+				"key": "alt+b alt+m",
+				"when": "!editorHasSelection"
+			},			{
+				"command": "mover.combination.alt+b alt+o",
+				"key": "alt+b alt+o",
+				"when": "!editorHasSelection"
+			},
+			{
+				"command": "mover.combination.alt+b alt+u",
+				"key": "alt+b alt+u",
+				"when": "!editorHasSelection"
+			},	
+			{
+				"command": "mover.combination.alt+b alt+.",
+				"key": "alt+b alt+.",
+				"when": "!editorHasSelection"
+			},
+			{
+				"command": "mover.combination.alt+c alt+c",
+				"key": "alt+c alt+c",
+				"when": "!editorHasSelection"
+			},
+			{
+				"command": "mover.combination.alt+x alt+x",
+				"key": "alt+x alt+x",
+				"when": "!editorHasSelection"
+			}
+		]
+
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint src --ext ts",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.1",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.36.0",
+		"eslint": "^6.8.0",
+		"@typescript-eslint/parser": "^2.18.0",
+		"@typescript-eslint/eslint-plugin": "^2.18.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.0.1",
+		"typescript": "^3.7.5",
+		"vscode-test": "^1.3.0"
+	}
+}
