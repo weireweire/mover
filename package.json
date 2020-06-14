@@ -3,7 +3,7 @@
 	"displayName": "Mover",
 	"description": "an efficient and easier editor extension derived from vim and emacs.",
 	"icon": "icon.png",
-	"version": "0.1.0",
+	"version": "0.1.2",
 	"publisher": "weire",
 	"repository": {
 		"type": "git",
@@ -13,7 +13,15 @@
 		"vscode": "^1.37.0"
 	},
 	"categories": [
-		"Other"
+		"Other",
+		"Keymaps"
+	],
+	"keywords": [
+		"vim",
+		"emacs",
+		"editor",
+		"coding",
+		"efficiency"
 	],
 	"activationEvents": [
 		"*",
