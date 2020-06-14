@@ -1,14 +1,15 @@
 # Mover
 
-Mover is an easy-to-learn editor for non heavy user of vim or emacs. It learned from vim/emacs and provides easyer keybindings. Spend five minutes reading this, and your coding efficiency will increase significantly.
+Mover is an easy editor for people who do not or do not heavily use vim and emacs. It learned from vim/emacs and provides easier keybindings. Spend five minutes reading this, and your coding efficiency will increase significantly.
 
 ## Features
 
-* **Non-aggresive**: Retain the original functions and keybindings as much as possible. (So the ctrl+c and ctrl+v are safe.)
+* **Efficient**: Avoid moving your hands far to the mouse, cursor keys, Ctrl, Esc, etc. 
+
+* **Non-aggresive**: Retain the original keybindings as much as possible. (So the ctrl+c/ctrl+v are safe.)
 
 * **Easy**: The intuitive keybindings and consistency make it easy to master.
 
-* **Efficient**: Avoid moving your hands far to the mouse, cursor keys, Ctrl, Esc, etc. Support both key combinations for quick edit and mode change for heavy edit.
 
 ## Usage
 
@@ -21,6 +22,7 @@ Most function is performed by alt combination keys. The basic cursor move keys a
 
   j(←)  k(↓)  l(→)
 ```
+
 This keeps the ralative positions of origin arrow keys. Except `alt+j` and `alt+l` means moving a word instead of a character.
 
 In Mover, it's encouraged to move cursor by a long-distance key rather than several short-distance keys.
@@ -28,6 +30,7 @@ In Mover, it's encouraged to move cursor by a long-distance key rather than seve
 ### **Level 2: Extended Cursor Move**
 
 The extended cursor move keys are **alt+** follows:
+
 ```
  u(←character)  i(↑)        o(→character)
 
@@ -43,19 +46,26 @@ Congratulations! When come to here, you can start using Mover. Go and practice!
 ### **Level 3: Mode Change**
 
 Mover has two modes: **Edit** and **Alt**. Mode changing is performed by press `alt+enter` key.
+
 ```
   enter(change mode)
 ```
 
 Mover starts with Edit mode, in which you can type as usual and use Mover function with alt combination keys.
 
-In Alt mode, you can't type and you can use Mover function without alt key. Besides `alt+enter`, you can also change to Edit mode by press alt combination keys when using Mover function.
+In Alt mode, you can't type but you can use Mover function without alt key. 
 
-Mover keeps the consistency, and all the `alt+(key)` function in Edit Mode equals to the single `(key)` function in Alt mode.
+Mover keeps the consistency. All the `alt+(key)` function in Edit Mode equals to the single `(key)` function in Alt mode.
+
+If you do use an alt in Alt mode, mover will change to Edit mode after the key takes effect.
 
 *In the following sections, `alt+` key in Edit Mode will not be noted.*
 
 ### **Level 4: Prepend With A Number**
+
+```
+` 1 2 3 4 5 6 7 8 9 0 -
+```
 
 Similar to vim, you can prepend with a number to repeat the command.
 
@@ -71,6 +81,7 @@ w(←tab)    e(→editor)  r(→tab)
 
  s(←editor) d(→editor)  f(→editor)
 ```
+
 Where `e d s f` can navigate between sub-window, such as splited editor. `w` and `r` change the tab page.
 
 ```
@@ -78,20 +89,24 @@ Where `e d s f` can navigate between sub-window, such as splited editor. `w` and
 
  g(go to line)
 ```
+
 Where `p` equals to `f12` in vscode. `[` and `]` equal to `alt+←` and `alt+→` in vscode.
 
 ### **Level 6: Select And Edit**
+
 ```
 shift(select)
 ```
+
 Similar to the origin usage, hold `shift` and move cursor means select. All Mover cursor move keys are supported here.
 
 ```
 x(cut)   c(copy)   v(paste)   b(delete)
 ```
+
 Mover retains the origin cut/copy/paste keybindings. However, because `ctrl` is a second class key in Mover, you can also use them by `alt`. `b` is newly added for delete.
 
-single pressing `x/c/b` will take effect on selection, while double pressing will take effect on the current line.
+Single pressing `x/c/b` will take effect on selection, while double pressing will take effect on the current line.
 `b` can chord with cursor keys. For example, `b j` means delete all left.
 
 ```
@@ -100,9 +115,12 @@ single pressing `x/c/b` will take effect on selection, while double pressing wil
 z(undo)
 ```
 
+Alt key support is also added to `z` and `y`.
+
 ```
 esc(escape)
 ```
+
 Remember esc can help you close various windows such as find widget. Try avoid using mouse.
 ## Extension Settings
 todo

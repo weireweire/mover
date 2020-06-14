@@ -1,7 +1,7 @@
 {
 	"name": "mover",
 	"displayName": "Mover",
-	"description": "an easy and efficient editor extension derived from vim and emacs.",
+	"description": "an efficient and easier editor extension derived from vim and emacs.",
 	"icon": "icon.png",
 	"version": "0.1.0",
 	"publisher": "weire",
