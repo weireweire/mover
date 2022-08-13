@@ -3,12 +3,8 @@
 	"displayName": "Mover",
 	"description": "an efficient and easier editor extension derived from vim and emacs.",
 	"icon": "icon.png",
-	"version": "0.1.2",
+	"version": "0.1.4",
 	"publisher": "weire",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/weireweire/mover.git"
-	  },
 	"engines": {
 		"vscode": "^1.37.0"
 	},
@@ -23,10 +19,15 @@
 		"coding",
 		"efficiency"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/weireweire/mover.git"
+	  },
 	"activationEvents": [
 		"*",
 		"onCommand:extension.mover"
 	],
+	"extensionKind" : ["ui", "workspace"],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [

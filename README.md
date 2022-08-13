@@ -6,10 +6,9 @@ Mover is an easy editor for people who do not or do not heavily use vim and emac
 
 * **Efficient**: Avoid moving your hands far to the mouse, cursor keys, Ctrl, Esc, etc. 
 
-* **Non-aggresive**: Retain the original keybindings as much as possible. (So the ctrl+c/ctrl+v are safe.)
-
 * **Easy**: The intuitive keybindings and consistency make it easy to master.
 
+* **Non-aggresive**: Retain the original keybindings as much as possible. (So the ctrl+c/ctrl+v are safe.)
 
 ## Usage
 
@@ -23,7 +22,7 @@ Most function is performed by alt combination keys. The basic cursor move keys a
   j(←)  k(↓)  l(→)
 ```
 
-This keeps the ralative positions of origin arrow keys. Except `alt+j` and `alt+l` means moving a word instead of a character.
+This keeps the ralative positions of original arrow keys. Except `alt+j` and `alt+l` means moving a word instead of a character.
 
 In Mover, it's encouraged to move cursor by a long-distance key rather than several short-distance keys.
 
@@ -98,13 +97,13 @@ Where `p` equals to `f12` in vscode. `[` and `]` equal to `alt+←` and `alt+→
 shift(select)
 ```
 
-Similar to the origin usage, hold `shift` and move cursor means select. All Mover cursor move keys are supported here.
+Similar to the original usage, hold `shift` and move cursor means select. All Mover cursor move keys are supported here.
 
 ```
 x(cut)   c(copy)   v(paste)   b(delete)
 ```
 
-Mover retains the origin cut/copy/paste keybindings. However, because `ctrl` is a second class key in Mover, you can also use them by `alt`. `b` is newly added for delete.
+Mover retains the original cut/copy/paste keybindings. However, because `ctrl` is a second class key in Mover, you can also use them by `alt`. `b` is newly added for delete.
 
 Single pressing `x/c/b` will take effect on selection, while double pressing will take effect on the current line.
 `b` can chord with cursor keys. For example, `b j` means delete all left.
@@ -132,6 +131,6 @@ There have been nice command mode in vscode. Try `ctrl+shift+p`.
 ### Some keys take no effect.
 Check if there is a keybinding conflict.
 
-### What about the origin alt function?
-Most origin alt funtion take effect by press in sequence rather than combination.
+### What about the original alt function?
+Most original alt funtion take effect by press in sequence rather than combination.
 
