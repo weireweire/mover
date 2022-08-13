@@ -3,7 +3,7 @@
 	"displayName": "Mover",
 	"description": "an efficient and easier editor extension derived from vim and emacs.",
 	"icon": "icon.png",
-	"version": "0.1.4",
+	"version": "0.2.0",
 	"publisher": "weire",
 	"engines": {
 		"vscode": "^1.37.0"
