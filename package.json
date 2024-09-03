@@ -3,7 +3,7 @@
 	"displayName": "Mover",
 	"description": "an efficient and easier editor extension derived from vim and emacs.",
 	"icon": "icon.png",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"publisher": "weire",
 	"engines": {
 		"vscode": "^1.37.0"
@@ -159,6 +159,16 @@
 				"when": "editorTextFocus"
 			},
 			{
+				"key": "alt+i",
+				"command": "selectPrevSuggestion",
+				"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+			},
+			{
+				"key": "alt+i",
+				"command": "showPrevParameterHint",
+				"when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+			},
+			{
 				"command": "mover.combination.alt+j",
 				"key": "alt+j",
 				"when": "editorTextFocus"
@@ -167,6 +177,16 @@
 				"command": "mover.combination.alt+k",
 				"key": "alt+k",
 				"when": "editorTextFocus"
+			},
+			{
+				"key": "alt+k",
+				"command": "selectNextSuggestion",
+				"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+			},
+			{
+				"key": "alt+k",
+				"command": "showNextParameterHint",
+				"when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
 			},
 			{
 				"command": "mover.combination.alt+l",
