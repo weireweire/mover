@@ -26,6 +26,8 @@ This keeps the ralative positions of original arrow keys. Except `alt+j` and `al
 
 In Mover, it's encouraged to move cursor by a long-distance key rather than several short-distance keys.
 
+Besides moving cursor, `alt+i` and `alt+k` can also be used to selet in code suggestion boxes.
+
 ### **Level 2: Extended Cursor Move**
 
 The extended cursor move keys are **alt+** follows:
@@ -78,7 +80,7 @@ What's more,  `` ` `` key is used to represent "infinite". So `` `i `` means mov
 ```
 w(←tab)    e(→editor)  r(→tab)
 
- s(←editor) d(→editor)  f(→editor)
+ s(←editor) d(↓editor)  f(→editor)
 ```
 
 Where `e d s f` can navigate between sub-window, such as splited editor. `w` and `r` change the tab page.
@@ -122,7 +124,7 @@ esc(escape)
 
 Remember esc can help you close various windows such as find widget. Try avoid using mouse.
 ## Extension Settings
-todo
+Search `Mover` in `File->Preferences->Keyboard Shortcuts`, you can find all the Mover key bindings and change it if you need.
 
 ## Questions
 ### Where is the command mode?
