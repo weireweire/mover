@@ -23,14 +23,6 @@ export function activate(context: vscode.ExtensionContext) {
 
 	MoverState.setCurrentMode(MoverMode.Edit);
 
-	vscode.commands.registerCommand('type', async (args) => {
-		if (MoverState.currentMode === MoverMode.Alt){
-			handle_key(args.text);
-		}else{
-			vscode.commands.executeCommand("default:type", args);
-		}
-	});
-
     for (let keybinding of packagejson.contributes.keybindings) {
 		if(keybinding.command.startsWith("mover.combination")){
 			vscode.commands.registerCommand(keybinding.command, () => {handle_key(keybinding.key);});

@@ -3,7 +3,7 @@
 	"displayName": "Mover",
 	"description": "an efficient and easier editor extension derived from vim and emacs.",
 	"icon": "icon.png",
-	"version": "0.2.1",
+	"version": "0.2.2",
 	"publisher": "weire",
 	"engines": {
 		"vscode": "^1.37.0"
@@ -149,9 +149,19 @@
 				"when": "editorTextFocus"
 			},
 			{
+				"command": "mover.combination.(alt)g",
+				"key": "g",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
 				"command": "mover.combination.alt+h",
 				"key": "alt+h",
 				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.(alt)h",
+				"key": "h",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
 			},
 			{
 				"command": "mover.combination.alt+i",
@@ -159,9 +169,19 @@
 				"when": "editorTextFocus"
 			},
 			{
+				"command": "mover.combination.(alt)i",
+				"key": "i",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
 				"key": "alt+i",
 				"command": "selectPrevSuggestion",
 				"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+			},
+			{
+				"key": "i",
+				"command": "selectPrevSuggestion",
+				"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion && mover.mode == 'Alt'"
 			},
 			{
 				"key": "alt+i",
@@ -169,9 +189,19 @@
 				"when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
 			},
 			{
+				"key": "i",
+				"command": "showPrevParameterHint",
+				"when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible && mover.mode == 'Alt'"
+			},
+			{
 				"command": "mover.combination.alt+j",
 				"key": "alt+j",
 				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.(alt)j",
+				"key": "j",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
 			},
 			{
 				"command": "mover.combination.alt+k",
@@ -179,9 +209,19 @@
 				"when": "editorTextFocus"
 			},
 			{
+				"command": "mover.combination.(alt)k",
+				"key": "k",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
 				"key": "alt+k",
 				"command": "selectNextSuggestion",
 				"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+			},
+			{
+				"key": "k",
+				"command": "selectNextSuggestion",
+				"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion && mover.mode == 'Alt'"
 			},
 			{
 				"key": "alt+k",
@@ -189,9 +229,19 @@
 				"when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
 			},
 			{
+				"key": "k",
+				"command": "showNextParameterHint",
+				"when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible && mover.mode == 'Alt'"
+			},
+			{
 				"command": "mover.combination.alt+l",
 				"key": "alt+l",
 				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.(alt)l",
+				"key": "l",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
 			},
 			{
 				"command": "mover.combination.alt+m",
@@ -199,9 +249,19 @@
 				"when": "editorTextFocus"
 			},
 			{
+				"command": "mover.combination.(alt)m",
+				"key": "m",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
 				"command": "mover.combination.alt+o",
 				"key": "alt+o",
 				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.(alt)o",
+				"key": "o",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
 			},
 			{
 				"command": "mover.combination.alt+p",
@@ -209,13 +269,27 @@
 				"when": "editorTextFocus"
 			},
 			{
+				"command": "mover.combination.(alt)p",
+				"key": "p",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
 				"command": "mover.combination.alt+r",
 				"key": "alt+r"
+			},
+			{
+				"command": "mover.combination.(alt)r",
+				"key": "r && mover.mode == 'Alt'"
 			},
 			{
 				"command": "mover.combination.alt+s",
 				"key": "alt+s",
 				"when": "!terminalFocus"
+			},
+			{
+				"command": "mover.combination.(alt)s",
+				"key": "s",
+				"when": "!terminalFocus && mover.mode == 'Alt'"
 			},
 			{
 				"command": "workbench.action.navigateLeft",
@@ -233,13 +307,27 @@
 				"when": "editorTextFocus"
 			},
 			{
+				"command": "mover.combination.(alt)u",
+				"key": "u",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
 				"command": "mover.combination.alt+v",
 				"key": "alt+v",
 				"when": "editorTextFocus"
 			},
 			{
+				"command": "mover.combination.(alt)v",
+				"key": "v",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
 				"command": "mover.combination.alt+w",
 				"key": "alt+w"
+			},
+			{
+				"command": "mover.combination.(alt)w",
+				"key": "w && mover.mode == 'Alt'"
 			},
 			{
 				"command": "mover.combination.alt+x",
@@ -247,9 +335,19 @@
 				"when": "editorHasSelection"
 			},
 			{
+				"command": "mover.combination.(alt)x",
+				"key": "x",
+				"when": "editorHasSelection && mover.mode == 'Alt'"
+			},
+			{
 				"command": "mover.combination.alt+y",
 				"key": "alt+y",
 				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.(alt)y",
+				"key": "y",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
 			},
 
 			{
@@ -258,9 +356,19 @@
 				"when": "editorTextFocus"
 			},
 			{
+				"command": "mover.combination.(alt)z",
+				"key": "z",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
 				"command": "mover.combination.alt+,",
 				"key": "alt+,",
 				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.(alt),",
+				"key": ",",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
 			},
 			{
 				"command": "mover.combination.alt+.",
@@ -268,9 +376,19 @@
 				"when": "editorTextFocus"
 			},
 			{
+				"command": "mover.combination.(alt).",
+				"key": ".",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
 				"command": "mover.combination.alt+]",
 				"key": "alt+]",
 				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.(alt)]",
+				"key": "]",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
 			},
 			{
 				"command": "mover.combination.alt+[",
@@ -278,66 +396,79 @@
 				"when": "editorTextFocus"
 			},
 			{
+				"command": "mover.combination.(alt)[",
+				"key": "[",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
+			{
 				"command": "mover.combination.alt+`",
 				"key": "alt+`",
 				"when": "editorTextFocus"
+			},
+			{
+				"command": "mover.combination.(alt)`",
+				"key": "`",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
 			},
 			{
 				"command": "mover.combination.alt+-",
 				"key": "alt+-",
 				"when": "editorTextFocus"
 			},
+			{
+				"command": "mover.combination.(alt)-",
+				"key": "-",
+				"when": "editorTextFocus && mover.mode == 'Alt'"
+			},
 
 
 
 			{
-				"command": "mover.combination.shift+i",
+				"command": "mover.combination.(alt)shift+i",
 				"key": "shift+i",
 				"when": "editorTextFocus && mover.mode == 'Alt'"
 			},
 			{
-				"command": "mover.combination.shift+j",
+				"command": "mover.combination.(alt)shift+j",
 				"key": "shift+j",
 				"when": "editorTextFocus && mover.mode == 'Alt'"
 			},
 			{
-				"command": "mover.combination.shift+k",
+				"command": "mover.combination.(alt)shift+k",
 				"key": "shift+k",
 				"when": "editorTextFocus && mover.mode == 'Alt'"
 			},
 			{
-				"command": "mover.combination.shift+l",
+				"command": "mover.combination.(alt)shift+l",
 				"key": "shift+l",
 				"when": "editorTextFocus && mover.mode == 'Alt'"
 			},
 			{
-				"command": "mover.combination.shift+m",
+				"command": "mover.combination.(alt)shift+m",
 				"key": "shift+m",
 				"when": "editorTextFocus && mover.mode == 'Alt'"
 			},
 			{
-				"command": "mover.combination.shift+o",
+				"command": "mover.combination.(alt)shift+o",
 				"key": "shift+o",
 				"when": "editorTextFocus && mover.mode == 'Alt'"
 			},
 			{
-				"command": "mover.combination.shift+u",
+				"command": "mover.combination.(alt)shift+u",
 				"key": "shift+u",
 				"when": "editorTextFocus && mover.mode == 'Alt'"
 			},
 			{
-				"command": "mover.combination.shift+,",
+				"command": "mover.combination.(alt)shift+,",
 				"key": "shift+,",
 				"when": "editorTextFocus && mover.mode == 'Alt'"
 			},
 
 			{
-				"command": "mover.combination.shift+.",
+				"command": "mover.combination.(alt)shift+.",
 				"key": "shift+.",
 				"when": "editorTextFocus && mover.mode == 'Alt'"
 			},
-
-
 
 
 			{

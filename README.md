@@ -26,7 +26,7 @@ This keeps the ralative positions of original arrow keys. Except `alt+j` and `al
 
 In Mover, it's encouraged to move cursor by a long-distance key rather than several short-distance keys.
 
-Besides moving cursor, `alt+i` and `alt+k` can also be used to selet in code suggestion boxes.
+Besides moving cursor, `alt+i` and `alt+k` can also be used to select in code suggestion boxes.
 
 ### **Level 2: Extended Cursor Move**
 
