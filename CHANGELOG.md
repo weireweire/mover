@@ -4,6 +4,12 @@ All notable changes to the "mover" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.2.3] - 2024-09-30
+
+### Fixed
+- Fix the issue that `i` and `k` will be short circuit by widget item selection somtimes in edit mode.
+
+
 ## [0.2.2] - 2024-09-10
 
 ### Added

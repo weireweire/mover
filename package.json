@@ -3,7 +3,7 @@
 	"displayName": "Mover",
 	"description": "an efficient and easier editor extension derived from vim and emacs.",
 	"icon": "icon.png",
-	"version": "0.2.2",
+	"version": "0.2.3",
 	"publisher": "weire",
 	"engines": {
 		"vscode": "^1.37.0"
@@ -174,24 +174,24 @@
 				"when": "editorTextFocus && mover.mode == 'Alt'"
 			},
 			{
-				"key": "alt+i",
 				"command": "selectPrevSuggestion",
-				"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
-			},
-			{
-				"key": "i",
-				"command": "selectPrevSuggestion",
-				"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion && mover.mode == 'Alt'"
-			},
-			{
 				"key": "alt+i",
-				"command": "showPrevParameterHint",
-				"when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+				"when": "suggestWidgetVisible && textInputFocus && (suggestWidgetMultipleSuggestions || !suggestWidgetHasFocusedSuggestion) && mover.mode != 'Alt'"
 			},
 			{
+				"command": "selectPrevSuggestion",
 				"key": "i",
+				"when": "suggestWidgetVisible && textInputFocus && (suggestWidgetMultipleSuggestions || !suggestWidgetHasFocusedSuggestion) && mover.mode == 'Alt'"
+			},
+			{
 				"command": "showPrevParameterHint",
-				"when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible && mover.mode == 'Alt'"
+				"key": "alt+i",
+				"when": "(editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible) && mover.mode != 'Alt'"
+			},
+			{
+				"command": "showPrevParameterHint",
+				"key": "i",
+				"when": "(editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible) && mover.mode == 'Alt'"
 			},
 			{
 				"command": "mover.combination.alt+j",
@@ -214,24 +214,24 @@
 				"when": "editorTextFocus && mover.mode == 'Alt'"
 			},
 			{
-				"key": "alt+k",
 				"command": "selectNextSuggestion",
-				"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
-			},
-			{
-				"key": "k",
-				"command": "selectNextSuggestion",
-				"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion && mover.mode == 'Alt'"
-			},
-			{
 				"key": "alt+k",
-				"command": "showNextParameterHint",
-				"when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+				"when": "suggestWidgetVisible && textInputFocus && (suggestWidgetMultipleSuggestions || !suggestWidgetHasFocusedSuggestion) && mover.mode != 'Alt'"
 			},
 			{
+				"command": "selectNextSuggestion",
 				"key": "k",
+				"when": "suggestWidgetVisible && textInputFocus && (suggestWidgetMultipleSuggestions || !suggestWidgetHasFocusedSuggestion) && mover.mode == 'Alt'"
+			},
+			{
 				"command": "showNextParameterHint",
-				"when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible && mover.mode == 'Alt'"
+				"key": "alt+k",
+				"when": "(editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible) && mover.mode != 'Alt'"
+			},
+			{
+				"command": "showNextParameterHint",
+				"key": "k",
+				"when": "(editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible) && mover.mode == 'Alt'"
 			},
 			{
 				"command": "mover.combination.alt+l",
